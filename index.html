@@ -925,7 +925,8 @@ if (meta.app && window.parent !== window) {
       /* contact + footer */
       .contact { display: grid; gap: 40px; }
       @media (min-width: 980px) { .contact { grid-template-columns: 6fr 6fr; gap: 64px; } }
-      .bigtel { display: inline-block; font: 800 clamp(36px, 5.4vw, 72px)/1 var(--fh); letter-spacing: -0.02em; text-decoration: none; margin: 8px 0 28px; font-variant-numeric: tabular-nums; border-bottom: 1px solid var(--gold); padding-bottom: 8px; }
+      .bigtel { display: inline-block; font: 800 clamp(26px, 8.5vw, 44px)/1.05 var(--fh); letter-spacing: -0.02em; white-space: nowrap; max-width: 100%; text-decoration: none; margin: 8px 0 28px; font-variant-numeric: tabular-nums; border-bottom: 1px solid var(--gold); padding-bottom: 8px; }
+      @media (min-width: 900px) { .bigtel { font-size: clamp(30px, 3.2vw, 52px); } }
       .cinfo { margin: 0; border-top: 1px solid var(--rule); }
       .cinfo div { display: grid; grid-template-columns: 1fr 1.4fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
       .cinfo dt { font-size: 13px; color: var(--muted); }
